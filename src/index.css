@@ -303,3 +303,28 @@ a {
 .light-color {
     color: var(--light);
 }
+
+.project-wrap {
+    position: relative;
+}
+
+.project-description {
+    position: absolute;
+    padding: 50px;
+    top: 0;
+    bottom: 57px;
+    left: 8px;
+    right: 8px;
+    background: rgba(175, 186, 192, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.project-wrap:hover .project-description {
+    visibility: visible;
+    opacity: 1;
+}
