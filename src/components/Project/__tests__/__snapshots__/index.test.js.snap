@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project is rendering matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="project-wrap"
+  >
+    <img
+      alt="Food Store"
+      class="img-thumbnail mx-1"
+      src="0.jpg"
+    />
+    <div
+      class="project-description"
+    >
+      <h3>
+        <a
+          href=""
+          rel="noreferrer"
+          target="_blank"
+        >
+          Food Store
+        </a>
+      </h3>
+      <p>
+        It is a webportal to buy food.
+      </p>
+      <a
+        href=""
+        rel="noreferrer"
+        target="_blank"
+      >
+        Github
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

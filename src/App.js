@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [menuItems] = useState([
+        {
+            name: "about",
+            title: "About me",
+        },
+        { name: "portfolio", title: "Portfolio" },
+        { name: "contact", title: "Contact" },
+        {
+            name: "resume",
+            title: "Resume",
+        },
+    ]);
+
+    const [activeItem, setActiveItem] = useState(menuItems[0]);
+
+    const menuItemToReactComponentMap = {
+        about: <About title={menuItems[0].title} />,
+        portfolio: <Portfolio title={menuItems[1].title} />,
+        contact: <Contact title={menuItems[2].title} />,
+        resume: <Resume title={menuItems[3].title} />,
+    };
+
+    return (
+        <div>
+            <Header
+                menuItems={menuItems}
+                activeItem={activeItem}
+                setActiveItem={setActiveItem}
+            />
+            <main>
+                <section>
+                    {menuItemToReactComponentMap[activeItem.name]}
+                </section>
+            </main>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

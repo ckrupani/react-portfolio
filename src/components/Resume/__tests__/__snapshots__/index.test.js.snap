@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Resume component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Resume
+    </h1>
+    <div
+      class="my-2"
+    >
+      <span>
+        Download my 
+        <a
+          data-testid="link"
+          href="https://au.linkedin.com/in/chirag-rupani-3309a835"
+          rel="noreferrer"
+          target="_blank"
+        >
+          resume
+        </a>
+      </span>
+    </div>
+    <div
+      class="my-2"
+    >
+      <h5>
+        Frontend Technologies
+      </h5>
+      <ul>
+        <li
+          class="light-color"
+        >
+          React
+        </li>
+        <li
+          class="light-color"
+        >
+          Redux
+        </li>
+        <li
+          class="light-color"
+        >
+          Reselect
+        </li>
+        <li
+          class="light-color"
+        >
+          Jest
+        </li>
+      </ul>
+      <h5>
+        Backend Technologies
+      </h5>
+      <ul>
+        <li
+          class="light-color"
+        >
+          Java
+        </li>
+        <li
+          class="light-color"
+        >
+          NodeJs
+        </li>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;
