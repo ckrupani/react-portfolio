@@ -8,6 +8,7 @@ function Resume({ title }) {
                 <span>
                     Download my{" "}
                     <a
+                        data-testid="link"
                         href="https://au.linkedin.com/in/chirag-rupani-3309a835"
                         target="_blank"
                         rel="noreferrer"

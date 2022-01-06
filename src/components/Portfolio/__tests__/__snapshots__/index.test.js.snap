@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Portfolio
+    </h1>
+    <div
+      class="flex-row"
+    >
+      <div
+        class="project-wrap"
+      >
+        <img
+          alt="Food Store"
+          class="img-thumbnail mx-1"
+          src="0.jpg"
+        />
+        <div
+          class="project-description"
+        >
+          <h3>
+            <a
+              href=""
+              rel="noreferrer"
+              target="_blank"
+            >
+              Food Store
+            </a>
+          </h3>
+          <p>
+            It is a webportal to buy food.
+          </p>
+          <a
+            href=""
+            rel="noreferrer"
+            target="_blank"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+      <div
+        class="project-wrap"
+      >
+        <img
+          alt="Tours and Travel"
+          class="img-thumbnail mx-1"
+          src="1.jpg"
+        />
+        <div
+          class="project-description"
+        >
+          <h3>
+            <a
+              href=""
+              rel="noreferrer"
+              target="_blank"
+            >
+              Tours and Travel
+            </a>
+          </h3>
+          <p>
+            It is a webportal to organize tours.
+          </p>
+          <a
+            href=""
+            rel="noreferrer"
+            target="_blank"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+      <div
+        class="project-wrap"
+      >
+        <img
+          alt="Time Store"
+          class="img-thumbnail mx-1"
+          src="2.jpg"
+        />
+        <div
+          class="project-description"
+        >
+          <h3>
+            <a
+              href=""
+              rel="noreferrer"
+              target="_blank"
+            >
+              Time Store
+            </a>
+          </h3>
+          <p>
+            It is a webportal to buy timber.
+          </p>
+          <a
+            href=""
+            rel="noreferrer"
+            target="_blank"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+      <div
+        class="project-wrap"
+      >
+        <img
+          alt="AirBnB"
+          class="img-thumbnail mx-1"
+          src="3.jpg"
+        />
+        <div
+          class="project-description"
+        >
+          <h3>
+            <a
+              href=""
+              rel="noreferrer"
+              target="_blank"
+            >
+              AirBnB
+            </a>
+          </h3>
+          <p>
+            It is a webportal to book homes.
+          </p>
+          <a
+            href=""
+            rel="noreferrer"
+            target="_blank"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+      <div
+        class="project-wrap"
+      >
+        <img
+          alt="Landscaping"
+          class="img-thumbnail mx-1"
+          src="4.jpg"
+        />
+        <div
+          class="project-description"
+        >
+          <h3>
+            <a
+              href=""
+              rel="noreferrer"
+              target="_blank"
+            >
+              Landscaping
+            </a>
+          </h3>
+          <p>
+            It is a webportal to organize your landscaping needs.
+          </p>
+          <a
+            href=""
+            rel="noreferrer"
+            target="_blank"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

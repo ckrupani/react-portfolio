@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      About me
+    </h1>
+    <p>
+      I am a software engineer with over 15 years of experience. React, Redux, GraphQL are my main skills.
+    </p>
+  </div>
+</DocumentFragment>
+`;

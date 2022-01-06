@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <footer>
+    <ul
+      class="flex-row flex-center"
+    >
+      <li
+        class="mx-2"
+      >
+        <a
+          href="https://github.com/ckrupani"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Github
+        </a>
+      </li>
+      <li
+        class="mx-2"
+      >
+        <a
+          href="https://au.linkedin.com/in/chirag-rupani-3309a835"
+          rel="noreferrer"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </li>
+      <li
+        class="mx-2"
+      >
+        <a
+          href="https://twitter.com/ckrupani"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Twitter
+        </a>
+      </li>
+    </ul>
+  </footer>
+</DocumentFragment>
+`;
