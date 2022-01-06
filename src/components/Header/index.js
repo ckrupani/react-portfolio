@@ -1,10 +1,14 @@
 import React from "react";
 import Navigation from "../Navigation";
 
-function Header() {
+function Header({ menuItems, activeItem, setActiveItem }) {
     return (
         <header data-testid="header" className="flex-row space-between px-2">
-            <Navigation />
+            <Navigation
+                menuItems={menuItems}
+                activeItem={activeItem}
+                setActiveItem={setActiveItem}
+            />
         </header>
     );
 }

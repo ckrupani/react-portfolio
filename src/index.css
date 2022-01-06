@@ -145,6 +145,7 @@ input:focus {
 }
 
 li {
+    color: var(--dark);
     list-style: none;
 }
 

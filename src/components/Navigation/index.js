@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navigation() {
+function Navigation({ menuItems, activeItem, setActiveItem }) {
     return (
         <>
             <h2 className="header">
@@ -10,20 +10,17 @@ function Navigation() {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className="mx-2">
-                        <a data-testid="about" href="#about">
-                            About me
-                        </a>
-                    </li>
-                    <li className={`mx-2 ${"navActive"}`}>
-                        <span>Portfolio</span>
-                    </li>
-                    <li className={`mx-2 ${"navActive"}`}>
-                        <span>Contact</span>
-                    </li>
-                    <li className={`mx-2 ${"navActive"}`}>
-                        <span>Resume</span>
-                    </li>
+                    {menuItems.map((item, i) => (
+                        <li
+                            key={item.name}
+                            className={`mx-2 ${
+                                activeItem.name === item.name && "navActive"
+                            }`}
+                            onClick={() => setActiveItem(item)}
+                        >
+                            <span>{item.title}</span>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </>
