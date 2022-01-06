@@ -188,6 +188,10 @@ textarea {
     justify-content: center;
 }
 
+.flex-vertical {
+    flex-direction: column;
+}
+
 .mx-1 {
     margin-right: var(--spacing-one);
     margin-left: var(--spacing-one);
@@ -294,4 +298,8 @@ a {
 
 .navActive {
     color: var(--secondary);
+}
+
+.light-color {
+    color: var(--light);
 }

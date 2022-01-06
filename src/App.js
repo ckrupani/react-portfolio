@@ -3,6 +3,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Resume from "./components/Resume";
 
 function App() {
     const [menuItems] = useState([
@@ -21,8 +22,9 @@ function App() {
     const [activeItem, setActiveItem] = useState(menuItems[0]);
 
     const menuItemToReactComponentMap = {
-        about: <About />,
-        contact: <Contact />,
+        about: <About title={menuItems[0].title} />,
+        contact: <Contact title={menuItems[2].title} />,
+        resume: <Resume title={menuItems[3].title} />,
     };
 
     return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
-function ContactForm() {
+function ContactForm({ title }) {
     const [formState, setFormState] = useState({
         name: "",
         email: "",
@@ -38,35 +38,47 @@ function ContactForm() {
     }
 
     return (
-        <section>
-            <h1 data-testid="contactForm">Contact me</h1>
+        <div>
+            <h1 data-testid="contactForm">{title}</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input
-                        type="text"
-                        name="name"
-                        defaultValue={name}
-                        onBlur={handleChange}
-                    />
+                <div className="flex-row flex-vertical my-2">
+                    <div>
+                        <label htmlFor="name">Name:</label>
+                    </div>
+                    <div className="my-1">
+                        <input
+                            type="text"
+                            name="name"
+                            defaultValue={name}
+                            onBlur={handleChange}
+                        />
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input
-                        type="email"
-                        name="email"
-                        defaultValue={email}
-                        onBlur={handleChange}
-                    />
+                <div className="flex-row flex-vertical my-2">
+                    <div>
+                        <label htmlFor="email">Email address:</label>
+                    </div>
+                    <div>
+                        <input
+                            type="email"
+                            name="email"
+                            defaultValue={email}
+                            onBlur={handleChange}
+                        />
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea
-                        name="message"
-                        rows="5"
-                        defaultValue={message}
-                        onBlur={handleChange}
-                    />
+                <div className="flex-row flex-vertical my-2">
+                    <div>
+                        <label htmlFor="message">Message:</label>
+                    </div>
+                    <div>
+                        <textarea
+                            name="message"
+                            rows="5"
+                            defaultValue={message}
+                            onBlur={handleChange}
+                        />
+                    </div>
                 </div>
                 {errorMessage && (
                     <div>
@@ -77,7 +89,7 @@ function ContactForm() {
                     Submit
                 </button>
             </form>
-        </section>
+        </div>
     );
 }
 
